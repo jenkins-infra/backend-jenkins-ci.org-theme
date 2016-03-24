@@ -3,11 +3,11 @@
   <parent>
     <groupId>org.jenkins-ci</groupId>
     <artifactId>jenkins</artifactId>
-    <version>1.29</version>
+    <version>1.36</version>
   </parent>
   <groupId>org.jenkins-ci.backend</groupId>
   <artifactId>jenkins-ci.org-theme</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <name>http://jenkins-ci.org/ theme taglib for Stapler</name>
 
   <dependencies>
