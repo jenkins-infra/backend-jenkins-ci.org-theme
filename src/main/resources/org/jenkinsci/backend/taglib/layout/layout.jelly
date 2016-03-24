@@ -4,88 +4,487 @@
   </st:documentation>
   <st:contentType value="text/html;charset=UTF-8" />
   <!--<st:doctype publicId="-//W3C//DTD XHTML 1.0 Strict//EN" systemId="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />-->
-  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>${attrs.title} | Jenkins CI</title>
-      <link rel="shortcut icon" href="https://jenkins-ci.org/sites/default/files/jenkins_favicon.ico" type="image/x-icon" />
-      <link type="text/css" rel="stylesheet" media="all" href="https://jenkins-ci.org/sites/default/files/master/master.css" />
-      <script type="text/javascript" src="https://jenkins-ci.org/sites/default/files/master/master.js"></script>
-      <meta name="description" content="Jenkins is an open-source continuous integration server with 300+ plugins to support all kinds of software development"/>
-
-      <link rel="stylesheet" type="text/css" href="/account/style.css" />
-    </head>
-    <body>
-  <a href="http://github.com/jenkinsci"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork us on GitHub"/></a>
-      <div id="head" class="clearfloat">
-
-        <div class="clearfloat">
-          <div id="logo">
-            <a href="/" title="Jenkins CI"><img src="https://jenkins-ci.org/sites/default/files/jenkins_logo.png" alt="Jenkins CI" /></a>        <div id="tagline">An extendable open source continuous integration server</div>        </div>
-
-                </div>
-
-        <div id="navbar" class="clearfloat">
-            <div id="page-bar"><ul class="menu"><li class="leaf first"><a href="/node" title="Blog landing page">Blog</a></li>
-  <li class="expanded"><a href="/" title="">Connect</a><ul class="menu"><li class="leaf first"><a href="/content/mailing-lists" title="Browse Jenkins mailing list archives and/or subscribe to lists">Mailing Lists</a></li>
-  <li class="leaf"><a href="/content/chat" title="Chat with the rest of the Jenkins community on IRC">Chat</a></li>
-  <li class="leaf"><a href="http://twitter.com/jenkinsci" title="Check out @jenkinsci on Twitter">Twitter</a></li>
-  <li class="leaf"><a href="/content/event-calendar" title="Calendar for Jenkins events">Event Calendar</a></li>
-  <li class="leaf"><a href="https://wiki.jenkins-ci.org/display/JENKINS/Office+Hours" title="WebEx-based online meeting">Office Hours</a></li>
-  <li class="leaf last"><a href="http://jenkinsci.reddit.com/" title="Check out the latest links and news on jenkinsci.reddit.com!">reddit</a></li>
-  </ul></li>
-  <li class="leaf"><a href="https://wiki.jenkins-ci.org/display/JENKINS/Issue+Tracking" title="JIRA for Jenkins">Bug Tracker</a></li>
-  <li class="leaf"><a href="http://wiki.jenkins-ci.org/" title="Main documentation of Jenkins">Wiki</a></li>
-  <li class="leaf"><a href="http://ci.jenkins-ci.org/" title="Jenkins and plugins built on Jenkins">CI</a></li>
-  <li class="leaf"><a href="/views/hudson-tutorials">Tutorials</a></li>
-  <li class="leaf"><a href="/archive" title="Blog Archives">Archives</a></li>
-  <li class="leaf"><a href="https://wiki.jenkins-ci.org/display/JENKINS/Donation" title="">Donation</a></li>
-  <li class="leaf last active-trail"><a href="/content/about-jenkins-ci" title="About Jenkins CI" class="active">About</a></li>
-  </ul></div>              </div>
-      </div>
-
-      <div id="page" class="clearfloat">
 
 
+<html>
+<head>
+<title>
+${attrs.title} | Jenkins
+</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+<meta content='Jenkins is an open source automation server' name='description' />
+<link href='http://jenkins.io/sites/default/files/jenkins_favicon.ico' rel='shortcut icon' type='image/x-icon' />
+<!-- starting partial scriptlinks.html.haml -->
+<link href='http://jenkins.io/css/font-awesome.min.css' media='screen' rel='stylesheet' />
+<link href='http://jenkins.io/assets/bower/bootstrap/css/bootstrap.min.css' media='screen' rel='stylesheet' />
+<link href='http://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.css' media='screen' rel='stylesheet' />
+<link href='http://jenkins.io/assets/bower/tether/css/tether.min.css' media='screen' rel='stylesheet'/>
+<link href='http://jenkins.io/css/font-icons.css' media='screen' rel='stylesheet'/>
+<link href='http://jenkins.io/css/jenkins.css' media='screen' rel='stylesheet'/>
+<script src='http://jenkins.io/assets/bower/jquery/jquery.min.js'></script>
+<script src='http://jenkins.io/assets/bower/tether/js/tether.min.js'></script>
+<script src='http://jenkins.io/assets/bower/bootstrap/js/bootstrap.min.js'></script>
+<script src='http://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.js'></script>
 
-        <div id="content" class="main-content no-sidebar">
-          <d:invokeBody />
-        </div>
-      </div>
+<!-- ending partial scriptlinks.html.haml -->
+</head>
+<body>
+<!-- starting partial toptoolbar.html.haml -->
+<script>
+  $(function () {
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  })
+</script>
+<div id='ji-hover-layer'></div>
+<div class='ji-toolbar-offset'></div>
+<div class='fixed top'>
+<nav class='navbar navbar-dark bg-inverse' id='ji-toolbar'>
+<a class='fixed navbar-brand' href='http://jenkins.io/' id='home-logo'>
+Jenkins
+</a>
+<ul class='nav navbar-nav'>
+<li class='nav-item fixed'>
+<div class='btn-group' id='download-menu'>
+<a aria-expanded='false' aria-haspopup='true' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>
+Downloads
+</a>
+<!-- starting partial downloadlist.html.haml -->
+<div class='dropdown-menu'>
+<div class='row'>
+<div class='col-md-6 text-xs-center'>
+<h3>
+LTS Release
+</h3>
+<p>
+LTS (Long-Term Support) releases are chosen every 12 weeks from the
+stream of regular releases as the stable release for that time period.
+</p>
+<p>
+<div class='btn-group'>
+<a class='btn btn-primary' href='http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war'>
+<i class='icon-box-add'>
+1.642.3
+.war
+</i>
+</a>
+<button aria-expanded='false' aria-haspopup='true' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' data-trigger='hover'></button>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='https://registry.hub.docker.com/u/jenkinsci/jenkins/'>
+<span class='icon'></span>
+<span class='title'>
+Docker
+</span>
+</a>
+<a class='dropdown-item' href='http://www.freshports.org/devel/jenkins-lts'>
+<span class='icon'></span>
+<span class='title'>
+FreeBSD
+</span>
+</a>
+<a class='dropdown-item' href='https://packages.gentoo.org/packages/dev-util/jenkins-bin'>
+<span class='icon'></span>
+<span class='title'>
+Gentoo
+</span>
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-os-x-installer#stable'>
+<span class='icon'></span>
+<span class='title'>
+Mac OS X
+</span>
+</a>
+<a class='dropdown-item' href='http://openports.se/devel/jenkins/stable'>
+<span class='icon'></span>
+<span class='title'>
+OpenBSD
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/opensuse-stable/'>
+<span class='icon'></span>
+<span class='title'>
+openSUSE
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/redhat-stable/'>
+<span class='icon'></span>
+<span class='title'>
+Red Hat/Fedora/CentOS
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/debian-stable/'>
+<span class='icon'></span>
+<span class='title'>
+Ubuntu/Debian
+</span>
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-windows-installer#stable'>
+<span class='icon'></span>
+<span class='title'>
+Windows
+</span>
+</a>
+</div>
+</div>
+</p>
+<p class='details'>
+<a class='item' href='http://jenkins.io/changelog-stable'>Changelog</a>
+|
+<a class='item' href='http://mirrors.jenkins-ci.org/war-stable/'>Past Releases</a>
+</p>
+</div>
+<div class='col-md-6 text-xs-center'>
+<h3>
+Weekly Release
+</h3>
+<p>
+A new release is produced weekly to deliver bug fixes and features to
+users and plugin developers.
+</p>
+<p>
+<div class='btn-group'>
+<a class='btn btn-primary' href='http://mirrors.jenkins-ci.org/war/latest/jenkins.war'>
+<i class='icon-box-add'>
+1.654
+.war
+</i>
+</a>
+<button aria-expanded='false' aria-haspopup='true' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' data-trigger='hover'></button>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='https://registry.hub.docker.com/u/jenkinsci/jenkins/'>
+<span class='icon'></span>
+<span class='title'>
+Docker
+</span>
+</a>
+<a class='dropdown-item' href='http://www.freshports.org/devel/jenkins'>
+<span class='icon'></span>
+<span class='title'>
+FreeBSD
+</span>
+</a>
+<a class='dropdown-item' href='https://packages.gentoo.org/packages/dev-util/jenkins-bin'>
+<span class='icon'></span>
+<span class='title'>
+Gentoo
+</span>
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-os-x-installer'>
+<span class='icon'></span>
+<span class='title'>
+Mac OS X
+</span>
+</a>
+<a class='dropdown-item' href='http://openports.se/devel/jenkins/devel'>
+<span class='icon'></span>
+<span class='title'>
+OpenBSD
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/opensuse/'>
+<span class='icon'></span>
+<span class='title'>
+openSUSE
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/redhat/'>
+<span class='icon'></span>
+<span class='title'>
+Red Hat/Fedora/CentOS
+</span>
+</a>
+<a class='dropdown-item' href='http://pkg.jenkins-ci.org/debian/'>
+<span class='icon'></span>
+<span class='title'>
+Ubuntu/Debian
+</span>
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-windows-installer'>
+<span class='icon'></span>
+<span class='title'>
+Windows
+</span>
+</a>
+</div>
+</div>
+</p>
+<p class='details'>
+<a class='item' href='http://jenkins.io/changelog'>Changelog</a>
+|
+<a class='item' href='http://mirrors.jenkins-ci.org/war/'>Past Releases</a>
+</p>
+</div>
+</div>
+</div>
 
-      <div id="footer-region" class="clearfloat">
-          <!--
-          <div id="footer-left" class="clearfloat">
-              <div id="block-feedburner-3" class="block block-feedburner odd">
-                  <h3>Jenkins CI feeds</h3>
+<!-- ending partial downloadlist.html.haml -->
+</div>
+</li>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='#' role='button'>
+Participate
+</a>
+<div class='dropdown-menu'>
+<a class='dropdown-item' href='http://jenkins.io/content/mailing-lists' title='Browse Jenkins mailing list archives and/or subscribe to lists'>
+Mailing Lists
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/chat' title='Chat with the rest of the Jenkins community on IRC'>
+Chat
+</a>
+<a class='dropdown-item' href='https://twitter.com/jenkinsci' title='Check out @jenkinsci on Twitter'>
+Twitter
+</a>
+<a class='dropdown-item' href='http://jenkins.io/content/event-calendar' title='Calendar for Jenkins events'>
+Event Calendar
+</a>
+<a class='dropdown-item' href='https://wiki.jenkins-ci.org/display/JENKINS/Office+Hours' title='Hangouts-based online meeting'>
+Office Hours
+</a>
+<a class='dropdown-item' href='http://jenkins.meetup.com/' title='Meetups'>
+Meetups
+</a>
+<a class='dropdown-item' href='https://reddit.com/r/jenkinsci' title='Latest Jenkins related news on /r/jenkinsci'>
+/r/jenkinsci
+</a>
+<a class='dropdown-item' href='https://wiki.jenkins-ci.org/display/JENKINS/Google+Summer+Of+Code+2016' title='Google Summer of Code'>
+Google Summer of Code
+</a>
+</div>
+</li>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='#' role='button'>
+Use-cases
+</a>
+<div class='dropdown-menu'>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/android'>
+Android
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/c'>
+C/C++
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/docker'>
+Docker
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/embedded'>
+Embedded
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/github'>
+GitHub
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/java'>
+Java
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/pipeline'>
+Continuous Delivery
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/python'>
+Python
+</a>
+<a class='dropdown-item feature' href='http://jenkins.io/solutions/ruby'>
+Ruby
+</a>
+</div>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='http://jenkins.io/node'>
+Blog
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='http://jenkins.io/doc'>
+Documentation
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='https://wiki.jenkins-ci.org/'>
+Wiki
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='https://issues.jenkins-ci.org/'>
+Issues
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='http://jenkins.io/press'>
+Press
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='http://jenkins.io/conduct'>
+Conduct
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div id='ji-top-peg'>
+<a href='https://github.com/jenkinsci' id='ji-fork-tag'>
+<img alt='Fork us on GitHub' src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png' style='position: absolute; top: 0; right: 0; border: 0;' />
+</a>
+</div>
 
-                  <div class="content">
-                      yyy
-                  </div>
-              </div>
-        </div>
+<!-- ending partial toptoolbar.html.haml -->
+<div class='container'>
+<div class='row body'>
 
-        <div id="footer-middle" class="clearfloat">
-        </div>
 
-        <div id="footer-right" class="clearfloat">
-            <div id="block-creativecommons-site_license" class="block block-creativecommons even">
-                <h3>Site License</h3>
+<d:invokeBody />
 
-                <div class="content">
-                    xxx
-                </div>
-            </div>
-        </div>
-        -->
-      </div>
 
-      <!--
-      <div id="footer-message">
-        Blurb
-      </div>
-      -->
-    </body>
-  </html>
+</div>
+</div>
+
+
+<footer id='footer'>
+<div class='box'>
+<a href='https://github.com/jenkins-infra/jenkins.io/edit/master/content//press.adoc' title='Edit /press.adoc on GitHub'>
+Improve this page
+</a>
+|
+<a href='https://github.com/jenkins-infra/jenkins.io/commits/master/content//press.adoc' title='View /press.adoc history on GitHub'>
+Page history
+</a>
+</div>
+<div class='license-box col-md-5'>
+<p>
+<div id='creativecommons'>
+<a href='https://creativecommons.org/licenses/by-sa/4.0/'>
+<img src='https://licensebuttons.net/l/by-sa/4.0/88x31.png' />
+</a>
+</div>
+The content driving this site is licensed under the Creative Commons Attribution-ShareAlike 4.0 license.
+</p>
+</div>
+<div class='links col-md-7'>
+<ul class='major-areas'>
+<li class='area solo'>
+<h5>Resources</h5>
+<ul class='resources'>
+<li>
+<a href='http://jenkins.io/content/event-calendar'>
+Events
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/doc'>
+Documentation
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/node'>
+Blog
+</a>
+</li>
+</ul>
+</li>
+<li class='area multi'>
+<h5>Solutions</h5>
+<ul>
+<li>
+<a href='http://jenkins.io/solutions/android'>
+Android
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/c'>
+C/C++
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/docker'>
+Docker
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/embedded'>
+Embedded
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/github'>
+GitHub
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/java'>
+Java
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/pipeline'>
+Continuous Delivery
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/python'>
+Python
+</a>
+</li>
+<li>
+<a href='http://jenkins.io/solutions/ruby'>
+Ruby
+</a>
+</li>
+</ul>
+</li>
+<li class='area multi'>
+<h5>Project</h5>
+<ul class='project'>
+<li>
+<a href='https://issues.jenkins-ci.org'>
+Issue tracker
+</a>
+</li>
+<li>
+<a href='https://wiki.jenkins-ci.org'>
+Wiki
+</a>
+</li>
+<li>
+<a href='https://github.com/jenkinsci'>
+GitHub
+</a>
+</li>
+<li>
+<a href='https://ci.jenkins-ci.org'>
+Jenkins on Jenkins
+</a>
+</li>
+</ul>
+</li>
+<li class='area multi'>
+<h5>Community</h5>
+<ul class='community'>
+<li>
+<a href='https://groups.google.com/forum/#!forum/jenkinsci-user'>
+Users mailing list
+</a>
+</li>
+<li>
+<a href='https://groups.google.com/forum/#!forum/jenkinsci-dev'>
+Developers mailing list
+</a>
+</li>
+<li>
+<a href='https://twitter.com/jenkinsci'>
+Twitter
+</a>
+</li>
+<li>
+<a href='https://reddit.com/r/jenkinsci'>
+Reddit
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</footer>
+
+</body>
+</html>
 
 </j:jelly>
