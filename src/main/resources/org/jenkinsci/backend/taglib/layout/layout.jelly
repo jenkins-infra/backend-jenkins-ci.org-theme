@@ -340,15 +340,6 @@ Conduct
 <div style="height:3rem"/>  <!-- hack -->
 
 <footer id='footer'>
-<div class='box'>
-<a href='https://github.com/jenkins-infra/jenkins.io/edit/master/content//press.adoc' title='Edit /press.adoc on GitHub'>
-Improve this page
-</a>
-|
-<a href='https://github.com/jenkins-infra/jenkins.io/commits/master/content//press.adoc' title='View /press.adoc history on GitHub'>
-Page history
-</a>
-</div>
 <div class='license-box col-md-5'>
 <p>
 <div id='creativecommons'>
