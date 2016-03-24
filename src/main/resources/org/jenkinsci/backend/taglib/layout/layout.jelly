@@ -13,18 +13,18 @@ ${attrs.title} | Jenkins
 </title>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 <meta content='Jenkins is an open source automation server' name='description' />
-<link href='http://jenkins.io/sites/default/files/jenkins_favicon.ico' rel='shortcut icon' type='image/x-icon' />
+<link href='https://jenkins.io/sites/default/files/jenkins_favicon.ico' rel='shortcut icon' type='image/x-icon' />
 <!-- starting partial scriptlinks.html.haml -->
-<link href='http://jenkins.io/css/font-awesome.min.css' media='screen' rel='stylesheet' />
-<link href='http://jenkins.io/assets/bower/bootstrap/css/bootstrap.min.css' media='screen' rel='stylesheet' />
-<link href='http://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.css' media='screen' rel='stylesheet' />
-<link href='http://jenkins.io/assets/bower/tether/css/tether.min.css' media='screen' rel='stylesheet'/>
-<link href='http://jenkins.io/css/font-icons.css' media='screen' rel='stylesheet'/>
-<link href='http://jenkins.io/css/jenkins.css' media='screen' rel='stylesheet'/>
-<script src='http://jenkins.io/assets/bower/jquery/jquery.min.js'></script>
-<script src='http://jenkins.io/assets/bower/tether/js/tether.min.js'></script>
-<script src='http://jenkins.io/assets/bower/bootstrap/js/bootstrap.min.js'></script>
-<script src='http://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.js'></script>
+<link href='https://jenkins.io/css/font-awesome.min.css' media='screen' rel='stylesheet' />
+<link href='https://jenkins.io/assets/bower/bootstrap/css/bootstrap.min.css' media='screen' rel='stylesheet' />
+<link href='https://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.css' media='screen' rel='stylesheet' />
+<link href='https://jenkins.io/assets/bower/tether/css/tether.min.css' media='screen' rel='stylesheet'/>
+<link href='https://jenkins.io/css/font-icons.css' media='screen' rel='stylesheet'/>
+<link href='https://jenkins.io/css/jenkins.css' media='screen' rel='stylesheet'/>
+<script src='https://jenkins.io/assets/bower/jquery/jquery.min.js'></script>
+<script src='https://jenkins.io/assets/bower/tether/js/tether.min.js'></script>
+<script src='https://jenkins.io/assets/bower/bootstrap/js/bootstrap.min.js'></script>
+<script src='https://jenkins.io/assets/bower/ekko-lightbox/ekko-lightbox.min.js'></script>
 
 <!-- ending partial scriptlinks.html.haml -->
 </head>
@@ -42,7 +42,7 @@ ${attrs.title} | Jenkins
 <div class='ji-toolbar-offset'></div>
 <div class='fixed top'>
 <nav class='navbar navbar-dark bg-inverse' id='ji-toolbar'>
-<a class='fixed navbar-brand' href='http://jenkins.io/' id='home-logo'>
+<a class='fixed navbar-brand' href='https://jenkins.io/' id='home-logo'>
 Jenkins
 </a>
 <ul class='nav navbar-nav'>
@@ -90,7 +90,7 @@ FreeBSD
 Gentoo
 </span>
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-os-x-installer#stable'>
+<a class='dropdown-item' href='https://jenkins.io/content/thank-you-downloading-os-x-installer#stable'>
 <span class='icon'></span>
 <span class='title'>
 Mac OS X
@@ -120,7 +120,7 @@ Red Hat/Fedora/CentOS
 Ubuntu/Debian
 </span>
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-windows-installer#stable'>
+<a class='dropdown-item' href='https://jenkins.io/content/thank-you-downloading-windows-installer#stable'>
 <span class='icon'></span>
 <span class='title'>
 Windows
@@ -130,7 +130,7 @@ Windows
 </div>
 </p>
 <p class='details'>
-<a class='item' href='http://jenkins.io/changelog-stable'>Changelog</a>
+<a class='item' href='https://jenkins.io/changelog-stable'>Changelog</a>
 |
 <a class='item' href='http://mirrors.jenkins-ci.org/war-stable/'>Past Releases</a>
 </p>
@@ -171,7 +171,7 @@ FreeBSD
 Gentoo
 </span>
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-os-x-installer'>
+<a class='dropdown-item' href='https://jenkins.io/content/thank-you-downloading-os-x-installer'>
 <span class='icon'></span>
 <span class='title'>
 Mac OS X
@@ -201,7 +201,7 @@ Red Hat/Fedora/CentOS
 Ubuntu/Debian
 </span>
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/thank-you-downloading-windows-installer'>
+<a class='dropdown-item' href='https://jenkins.io/content/thank-you-downloading-windows-installer'>
 <span class='icon'></span>
 <span class='title'>
 Windows
@@ -211,7 +211,7 @@ Windows
 </div>
 </p>
 <p class='details'>
-<a class='item' href='http://jenkins.io/changelog'>Changelog</a>
+<a class='item' href='https://jenkins.io/changelog'>Changelog</a>
 |
 <a class='item' href='http://mirrors.jenkins-ci.org/war/'>Past Releases</a>
 </p>
@@ -227,16 +227,16 @@ Windows
 Participate
 </a>
 <div class='dropdown-menu'>
-<a class='dropdown-item' href='http://jenkins.io/content/mailing-lists' title='Browse Jenkins mailing list archives and/or subscribe to lists'>
+<a class='dropdown-item' href='https://jenkins.io/content/mailing-lists' title='Browse Jenkins mailing list archives and/or subscribe to lists'>
 Mailing Lists
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/chat' title='Chat with the rest of the Jenkins community on IRC'>
+<a class='dropdown-item' href='https://jenkins.io/content/chat' title='Chat with the rest of the Jenkins community on IRC'>
 Chat
 </a>
 <a class='dropdown-item' href='https://twitter.com/jenkinsci' title='Check out @jenkinsci on Twitter'>
 Twitter
 </a>
-<a class='dropdown-item' href='http://jenkins.io/content/event-calendar' title='Calendar for Jenkins events'>
+<a class='dropdown-item' href='https://jenkins.io/content/event-calendar' title='Calendar for Jenkins events'>
 Event Calendar
 </a>
 <a class='dropdown-item' href='https://wiki.jenkins-ci.org/display/JENKINS/Office+Hours' title='Hangouts-based online meeting'>
@@ -258,42 +258,42 @@ Google Summer of Code
 Use-cases
 </a>
 <div class='dropdown-menu'>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/android'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/android'>
 Android
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/c'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/c'>
 C/C++
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/docker'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/docker'>
 Docker
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/embedded'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/embedded'>
 Embedded
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/github'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/github'>
 GitHub
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/java'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/java'>
 Java
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/pipeline'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/pipeline'>
 Continuous Delivery
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/python'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/python'>
 Python
 </a>
-<a class='dropdown-item feature' href='http://jenkins.io/solutions/ruby'>
+<a class='dropdown-item feature' href='https://jenkins.io/solutions/ruby'>
 Ruby
 </a>
 </div>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='http://jenkins.io/node'>
+<a class='nav-link' href='https://jenkins.io/node'>
 Blog
 </a>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='http://jenkins.io/doc'>
+<a class='nav-link' href='https://jenkins.io/doc'>
 Documentation
 </a>
 </li>
@@ -308,12 +308,12 @@ Issues
 </a>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='http://jenkins.io/press'>
+<a class='nav-link' href='https://jenkins.io/press'>
 Press
 </a>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='http://jenkins.io/conduct'>
+<a class='nav-link' href='https://jenkins.io/conduct'>
 Conduct
 </a>
 </li>
@@ -356,17 +356,17 @@ The content driving this site is licensed under the Creative Commons Attribution
 <h5>Resources</h5>
 <ul class='resources'>
 <li>
-<a href='http://jenkins.io/content/event-calendar'>
+<a href='https://jenkins.io/content/event-calendar'>
 Events
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/doc'>
+<a href='https://jenkins.io/doc'>
 Documentation
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/node'>
+<a href='https://jenkins.io/node'>
 Blog
 </a>
 </li>
@@ -376,47 +376,47 @@ Blog
 <h5>Solutions</h5>
 <ul>
 <li>
-<a href='http://jenkins.io/solutions/android'>
+<a href='https://jenkins.io/solutions/android'>
 Android
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/c'>
+<a href='https://jenkins.io/solutions/c'>
 C/C++
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/docker'>
+<a href='https://jenkins.io/solutions/docker'>
 Docker
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/embedded'>
+<a href='https://jenkins.io/solutions/embedded'>
 Embedded
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/github'>
+<a href='https://jenkins.io/solutions/github'>
 GitHub
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/java'>
+<a href='https://jenkins.io/solutions/java'>
 Java
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/pipeline'>
+<a href='https://jenkins.io/solutions/pipeline'>
 Continuous Delivery
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/python'>
+<a href='https://jenkins.io/solutions/python'>
 Python
 </a>
 </li>
 <li>
-<a href='http://jenkins.io/solutions/ruby'>
+<a href='https://jenkins.io/solutions/ruby'>
 Ruby
 </a>
 </li>
