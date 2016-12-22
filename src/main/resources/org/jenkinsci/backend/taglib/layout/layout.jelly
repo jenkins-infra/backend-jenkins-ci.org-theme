@@ -72,7 +72,7 @@ stream of regular releases as the stable release for that time period.
 </a>
 <button aria-expanded='false' aria-haspopup='true' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' data-trigger='hover'></button>
 <div class='dropdown-menu'>
-<a class='dropdown-item' href='https://registry.hub.docker.com/u/jenkinsci/jenkins/'>
+<a class='dropdown-item' href='https://registry.hub.docker.com/_/jenkins/'>
 <span class='icon'></span>
 <span class='title'>
 Docker
